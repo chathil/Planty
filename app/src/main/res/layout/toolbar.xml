@@ -1,0 +1,16 @@
+<android.support.v7.widget.Toolbar android:id="@+id/app_bar"
+    style="@style/Widget.Kofee.Toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingStart="12dp"
+    android:paddingLeft="12dp"
+    android:paddingEnd="12dp"
+    android:paddingRight="12dp"
+    app:contentInsetStart="0dp"
+    app:title="@string/app_name"
+    app:navigationIcon="@drawable/shr_menu"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+</android.support.v7.widget.Toolbar>

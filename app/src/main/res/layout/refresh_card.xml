@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView android:layout_below="@id/status_card"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:layout_goneMarginTop="4dp"
+    app:cardElevation="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/refresh_text"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor Refresh Rate"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@id/refresh_text"
+            android:id="@+id/set_refresh_text_input"
+            style="@style/Widget.Kofee.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/set_refresh_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/set_refresh_text_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_set_refresh"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Okay"/>
+
+            <Button
+                android:id="@+id/btn_cancel_refresh"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:text="Cancel"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>
